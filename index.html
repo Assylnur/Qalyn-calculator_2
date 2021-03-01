@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Bootsrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Qalyn calcuator</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-3"> </div>
+      <div class="col-lg-5 col-md-9" id="calculator">
+        <h1> <strong>QALYN CALCULATOR </strong></h1>
+        <label>1. Bride's name:</label> <br>
+        <input type="text" id="name" class="dropdown mmargin" style="padding-right: 58px;"> <br>
+        <br>
+        <label>2. Starting bid:</label> <br>
+        <input type="number" id="startingbid" class="dropdown mmargin" style="padding-right: 58px;"> <br>
+        <br>
+        <label>3. Bride's education:</label>
+        <br>
+        <select id="education" class="dropdown mmargin" style="padding-right: 58px;">
+          <option value="blank"></option>
+          <option value="1.5">Undergraduate degree</option>
+          <option value="1.2"> College degree</option>
+          <option value="1.05">High school degree</option>
+          <option value="0.9">Middle school degree</option>
+        </select>
+        <br><br>
+        <label>4. Bride's family net worth:</label>
+        <br>
+        <select id="networth" class="dropdown mmargin">
+          <option value="blank"></option>
+          <option value="2">More than 100,000$</option>
+          <option value="1.5">Between 50,000$ and 100,000$</option>
+          <option value="1.2">Less than 50,000$</option>
+        </select>
+        <br><br>
+        <label>5. Bride's skills: </label>
+        <br>
+        <div id="chboxes" class="mmargin">
+          <input type="checkbox" id="3.1" name="skills" value="100" class="box">
+          <label for="3.1"> Playing on dombra </label><br>
+
+          <input type="checkbox" id="3.2" name="skills" value="200" class="box">
+          <label for="3.2"> Good cook</label><br>
+
+          <input type="checkbox" id="3.3" name="skills" value="150" class="box">
+          <label for="3.3"> Easygoing characte</label><br>
+
+          <input type="checkbox" id="3.4" name="skills" value="100" class="box">
+          <label for="3.4"> Sings well</label><br>
+        </div>
+        <br>
+        <label>6. Bride's age: </label>
+        <br class="assylnur's code">
+        <div id="divAge" class="mmargin">
+          <input type="radio" id="4.1" name="age" value="1.5" class="box">
+          <label for="4.1">Between 18-23</label><br>
+          <input type="radio" id="4.2" name="age" value="1.2" class="box">
+          <label for="4.2">Between 24-27</label><br>
+          <input type="radio" id="4.3" name="age" value="0.95" class="box">
+          <label for="4.3">28+</label><br>
+        </div>
+        <br>
+        <label>7. Bride's reputation: </label>
+        <br>
+        <input type="checkbox" id="5.1" name="reputation" value="0.85" class="mmargin box">
+        <label for="5.1"> Gossips about his parent's attitude </label><br>
+
+        <input type="checkbox" id="5.2" name="reputation" value="0.9" class="mmargin box">
+        <label for="5.2"> Gossips about his character</label><br>
+
+        <input type="checkbox" id="5.3" name="reputation" value="-200" class="mmargin box">
+        <label for="5.3"> General gossips around his person</label>
+        <br> <br>
+        <label>8. Love letter: </label> <br>
+
+        <textarea maxlength="500" id="loveLetter" class="dropdown mmargin"></textarea>
+        <br>
+
+
+
+        <button class="button mmargin">Calculate</button>
+        <br>
+        <p id="result"></p>
+        <br><br>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"> </script>
+</body>
+
+</html>
